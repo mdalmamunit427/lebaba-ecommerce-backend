@@ -25,8 +25,8 @@ router.post("/create-checkout-session", async (req, res) => {
       line_items: lineItems,
       mode: "payment",
       success_url:
-        "https://lebaba-ecommerce-frontend.vercel.app/success?session_id={CHECKOUT_SESSION_ID}",
-      cancel_url: "https://lebaba-ecommerce-frontend.vercel.app/cancel",
+        "https://www.protonier.xyz/success?session_id={CHECKOUT_SESSION_ID}",
+      cancel_url: "https://www.protonier.xyz/cancel",
     });
 
     res.json({ id: session.id });
